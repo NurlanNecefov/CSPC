@@ -27,3 +27,14 @@ conda activate cspc
 
 **Conclusion:**
 - In this lab, we learned how to write a test file, calculate the running time of a code, use Git for version control, document the enviroment and more.
+
+**Testing on another machine:**
+- My classmate downloaded the repo and created same environment from environment.yml on his machine. Then run pytest -v command and speed.py file. The results are:
+
+    **1.** pytest -v passed all 3 tests
+
+    **2.** The output of speed test is
+
+        loop: 0.033275 s
+        numpy: 0.000517 s
+        speed-up: 64x faster
