@@ -28,15 +28,18 @@ analytical = N0 * np.exp(-LAMBDA * t)
 #         left panel : scatter of the observed data, titled "Observed data"
 #         right panel: line plot of the analytical curve, titled "Analytical"
 #         label the axes.
-fig, ax = plt.subplots(1, 2)
+fig, ax = plt.subplots(1, 2, figsize=(12, 5))
+fig.subplots_adjust(wspace=0.5)
 
 ax[0].plot(t, observed)
-ax[0].set_xlabel("t", fontweight = "bold", fontsize = 15)
-ax[0].set_ylabel("N0", fontweight = "bold", fontsize = 15)
+ax[0].set_title("Observed data", fontsize = 15)
+ax[0].set_xlabel("t", fontsize = 15)
+ax[0].set_ylabel("N0", fontsize = 15)
 
 ax[1].plot(t, analytical)
-ax[1].set_xlabel("t", fontweight = "bold", fontsize = 15)
-ax[1].set_ylabel("N0", fontweight = "bold", fontsize = 15)
+ax[1].set_title("Analytical data", fontsize = 15)
+ax[1].set_xlabel("t", fontsize = 15)
+ax[1].set_ylabel("N0", fontsize = 15)
 
 
 # TODO 4: save the figure as figure.png
