@@ -8,19 +8,36 @@ Complete the TODOs below. Run with:  python plot.py
 
 import numpy as np
 import matplotlib.pyplot as plt
+import math
 
 LAMBDA = 0.3     # decay constant, given
 
 # TODO 1: read decay_observed.csv (columns: time, count; skip the header row)
 #         and split it into two arrays: t and observed.
+t = np.loadtxt("./decay_observed.csv", delimiter = ',', skiprows = 1)[:, 0]
+observed = np.loadtxt("./decay_observed.csv", delimiter = ',', skiprows = 1)[:, 1]
 
 
 # TODO 2: set N0 to the FIRST observed value, then build the analytical curve
 #         analytical = N0 * exp(-LAMBDA * t)
+N0 = observed[0]
+analytical = N0 * np.exp(-LAMBDA * t)
+
 
 # TODO 3: make a 1x2 subplot with SHARED x and y axes.
 #         left panel : scatter of the observed data, titled "Observed data"
 #         right panel: line plot of the analytical curve, titled "Analytical"
 #         label the axes.
+fig, ax = plt.subplots(1, 2)
+
+ax[0].plot(t, observed)
+ax[0].set_xlabel("t", fontweight = "bold", fontsize = 15)
+ax[0].set_ylabel("N0", fontweight = "bold", fontsize = 15)
+
+ax[1].plot(t, analytical)
+ax[1].set_xlabel("t", fontweight = "bold", fontsize = 15)
+ax[1].set_ylabel("N0", fontweight = "bold", fontsize = 15)
+
 
 # TODO 4: save the figure as figure.png
+plt.savefig("figure.png", dpi=500)
