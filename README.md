@@ -38,3 +38,19 @@ conda activate cspc
         loop: 0.033275 s
         numpy: 0.000517 s
         speed-up: 64x faster
+
+---
+## PW1 - Lab B: Data, Plotting, and Automation
+
+
+**What I Built:**
+- In plot.py, I write a code for creating the graph of given data from decay_observed.csv
+
+**How to Use?:**
+- Just run plot.py and it will creates figure.png at the location of plot.py
+
+**Expected Output:**
+
+
+**Conclusion:**
+- In this lab we learned how to draw a graph of given data and automating this with using snakemake.
