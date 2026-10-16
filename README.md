@@ -50,7 +50,7 @@ conda activate cspc
 - Just run plot.py and it will creates figure.png at the location of plot.py
 
 **Expected Output:**
-![Decay plot]((https://github.com/NurlanNecefov/CSPC/issues/1#issue-5846646472))
+![Decay plot](https://github.com/NurlanNecefov/CSPC/issues/1#issue-5846646472)
 
 **Conclusion:**
 - In this lab we learned how to draw a graph of given data and automating this with using snakemake.
