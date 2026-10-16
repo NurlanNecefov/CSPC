@@ -47,7 +47,7 @@ conda activate cspc
 - In plot.py, I write a code for creating the graph of given data from decay_observed.csv
 
 **How to Use?:**
-- Just run plot.py and it will creates figure.png at the location of plot.py
+- run `snakemake --cores 1 figure.png and it will creates figure.png at the location of plot.py
 
 **Expected Output:**
 ![Decay plot](https://private-user-images.githubusercontent.com/106445856/673291103-bbbd91f9-dc35-4815-a129-3c321e5cfcaf.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3OTIxNDE4MDgsIm5iZiI6MTc5MjE0MTUwOCwicGF0aCI6Ii8xMDY0NDU4NTYvNjczMjkxMTAzLWJiYmQ5MWY5LWRjMzUtNDgxNS1hMTI5LTNjMzIxZTVjZmNhZi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYxMDE2JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MTAxNlQwOTA1MDhaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT00MmM2Mzg5YWM3YTNmZGI2OTMwNDliNWU2MmRiYWU0MDc5NTJmM2E5MDAxNGIzMDMyMzM2YTVmMzI5M2RjYThkJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZyZXNwb25zZS1jb250ZW50LXR5cGU9aW1hZ2UlMkZwbmcifQ.cXcYhbv7pE8Zw8tKTtvS06VMMlT9AtoFzlaPsqAfT3w)
