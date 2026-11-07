@@ -54,3 +54,24 @@ conda activate cspc
 
 **Conclusion:**
 - In this lab we learned how to draw a graph of given data and automating this with using snakemake.
+
+---
+## PW2 - Lab A: Motion from Tracking Data
+
+
+**What I Built:**
+- We have y position and time datas of a freefall object. These datas have some noises. This program cleans these noises, calculates the velocity and acceleration, finds the mean acceleration, standard deviation of acceleration, and largest difference between original and recovered positions. As a bonus, it calculates same things on 2d plane trajectory. We used $v = \sqrt{v_x^2 + v_y^2}$ formula to calculate magnitude of velocity.
+
+**How to Use?:**
+- run `python "CSPC/PW2/Lab A/analysis_STUDENT.py` then it will creates *motion.png* and *motion_trajectory.png* at the location of plot.py
+
+**Expected Outputs:**
+![motion.png](https://private-user-images.githubusercontent.com/106445856/698612714-cbaf9af7-2113-4b26-89e5-9ade00bbde78.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3OTQwNzUxNTYsIm5iZiI6MTc5NDA3NDg1NiwicGF0aCI6Ii8xMDY0NDU4NTYvNjk4NjEyNzE0LWNiYWY5YWY3LTIxMTMtNGIyNi04OWU1LTlhZGUwMGJiZGU3OC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYxMTA3JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MTEwN1QxODA3MzZaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0zZTVkYjM1ODBlMmVkNDkzYmU2MTc5ZDE3YzI3NDEzNWQ1Y2RmODYyZDlkZDFiMjU2M2ZjNjBiNWJiOGY4NGEzJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZyZXNwb25zZS1jb250ZW50LXR5cGU9aW1hZ2UlMkZwbmcifQ.8rQTxAOe1CN1_HNgXoViuqPVI-e63ba52LZaZhLJn9Q)
+![motion_trajectory.png](https://private-user-images.githubusercontent.com/106445856/698612713-6162d125-9ae7-4100-9493-7d895a146109.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3OTQwNzUxNTYsIm5iZiI6MTc5NDA3NDg1NiwicGF0aCI6Ii8xMDY0NDU4NTYvNjk4NjEyNzEzLTYxNjJkMTI1LTlhZTctNDEwMC05NDkzLTdkODk1YTE0NjEwOS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYxMTA3JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MTEwN1QxODA3MzZaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1iMTExMjgwZjA0MWVmZTk2ZDdlMDJiOTM5YjdmMWYzMjBlNmVhMWViNjNhYTU3MjU0NjlmZGNlMWZkYjI0Mjk3JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZyZXNwb25zZS1jb250ZW50LXR5cGU9aW1hZ2UlMkZwbmcifQ.FcYdk6Zhw-hW2j3e7xNTYfgRMQqkIMxVgLk-LkO38og)
+
+**Questions:**
+- ***Part 3: The mean acceleration is near −9.81, but print its
+standard deviation too (a.std()). Notice it is large: the individual acceleration values swing
+wildly even though the position data looked smooth.***
+
+    Because of the inaccuracy of measurements, there is some *little* noises. When we get the gradient of them, these noises gradually increases. After 2 derivations we get acceleration but its noises much bigger than our measurements. Acceleration has biggest noise both because it's 2 derivatives of position so its noises increased and we can't filter them using derivative and integral method.
