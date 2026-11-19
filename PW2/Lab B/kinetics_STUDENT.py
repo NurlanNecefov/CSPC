@@ -11,9 +11,13 @@ from scipy.optimize import minimize
 
 # TODO 1: read kinetics.csv (columns time, concentration) into arrays t, C.
 #         Set C0 = the first concentration.
+t = np.loadtxt(fname="kinetics.csv", delimiter=",", skiprows=1)[:, 0]
+C = np.loadtxt(fname="kinetics.csv", delimiter=",", skiprows=1)[:, 1]
+C0 = np.loadtxt(fname="kinetics.csv", delimiter=",", skiprows=1)[0, 1]
 
 # TODO 2: write total_error(k) = sum of (measured - C0*exp(-k*t))^2.
 #         This is the "how bad" number: small when the model matches the data.
+
 
 # TODO 3: minimise total_error with scipy.optimize.minimize (method "SLSQP",
 #         bounds [(0, 5)], start x0=0.5). Print the fitted k.
