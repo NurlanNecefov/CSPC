@@ -68,7 +68,8 @@ print("\tGradient descent minimum: x =", x, ";\ty =", g(x))
 x0 = 0
 newtonMin = newton(dg, x0, fprime=d2g)
 
-print("\tNewton's method", "minimum" if d2g(newtonMin) > 0 else "maximum" + ": x =", newtonMin, ";\ty =", g(newtonMin))
+sign = d2g(newtonMin)
+print("\tNewton's method", ("minimum" if sign > 0 else "maximum" if sign < 0 else "flat point") + ": x =", newtonMin, ";\ty =", g(newtonMin))
 
 #   (3) SLSQP Method
 x0 = 0
@@ -94,7 +95,8 @@ print("\tGradient descent minimum: x =", x, ";\ty =", g(x))
 x0 = 2
 newtonMin = newton(dg, x0, fprime=d2g)
 
-print("\tNewton's method ", "minimum" if d2g(newtonMin) > 0 else "maximum" + ": x =", newtonMin, ";\ty =", g(newtonMin))
+sign = d2g(newtonMin)
+print("\tNewton's method", ("minimum" if sign > 0 else "maximum" if sign < 0 else "flat point") + ": x =", newtonMin, ";\ty =", g(newtonMin))
 
 #   (3) SLSQP Method
 x0 = 2
