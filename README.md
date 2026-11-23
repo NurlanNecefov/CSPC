@@ -75,3 +75,24 @@ standard deviation too (a.std()). Notice it is large: the individual acceleratio
 wildly even though the position data looked smooth.***
 
     Because of the inaccuracy of measurements, there is some *little* noises. When we get the gradient of them, these noises gradually increases. After 2 derivations we get acceleration but its noises much bigger than our measurements. Acceleration has biggest noise both because it's 2 derivatives of position so its noises increased and we can't filter them using derivative and integral method.
+
+---
+## PW2 - Lab B: Optimization in Chemistry
+
+
+**What I Built:**
+- Computers can't calculate derivative like a person, instead we use some mathematical methods to calculate derivative and some of them have small errors. In this lab we used these methods for optimizing chemical calculations.
+We used:
+
+    - Gradient Descent
+    - Newton's Method
+    - SLSQP Method
+    
+    and compared their results.
+
+**Questions:**
+1. do the methods agree? did Newton land on a minimum or another stationary point? how did the starting point change the result? *(Part 2B)*
+    
+    Gradient descent and SLSQP methods gives nearly the same results every time. On the other hand, Newton's method finds local minimum or maximum depends on starting point.
+
+**Expected Outputs:**
