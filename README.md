@@ -50,7 +50,7 @@ conda activate cspc
 - run `snakemake --cores 1 figure.png` and it will creates figure.png at the location of plot.py
 
 **Expected Output:**
-![Decay plot](https://private-user-images.githubusercontent.com/106445856/673291103-bbbd91f9-dc35-4815-a129-3c321e5cfcaf.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3OTQwNzU1ODcsIm5iZiI6MTc5NDA3NTI4NywicGF0aCI6Ii8xMDY0NDU4NTYvNjczMjkxMTAzLWJiYmQ5MWY5LWRjMzUtNDgxNS1hMTI5LTNjMzIxZTVjZmNhZi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYxMTA3JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MTEwN1QxODE0NDdaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1iZjAzNmI2ZWM2MDQxMGY2MmNjNzg5MWFhM2UyNDQzMmFkYmFlM2FkNjYyYjQyM2M5OWU3MTcwZDRmODlmZTAxJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZyZXNwb25zZS1jb250ZW50LXR5cGU9aW1hZ2UlMkZwbmcifQ.-pi2F0eHoUArEQiv8Fx2jW1MJZNlIIeR-opCymVHtak)
+![Decay plot](https://github.com/NurlanNecefov/images_for_readme/blob/main/pw1_figure.png?raw=true)
 
 **Conclusion:**
 - In this lab we learned how to draw a graph of given data and automating this with using snakemake.
@@ -66,8 +66,10 @@ conda activate cspc
 - run `python "CSPC/PW2/Lab A/analysis_STUDENT.py` then it will creates *motion.png* and *motion_trajectory.png* at the location of plot.py
 
 **Expected Outputs:**
-![motion.png](https://private-user-images.githubusercontent.com/106445856/698612714-cbaf9af7-2113-4b26-89e5-9ade00bbde78.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3OTQwNzUxNTYsIm5iZiI6MTc5NDA3NDg1NiwicGF0aCI6Ii8xMDY0NDU4NTYvNjk4NjEyNzE0LWNiYWY5YWY3LTIxMTMtNGIyNi04OWU1LTlhZGUwMGJiZGU3OC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYxMTA3JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MTEwN1QxODA3MzZaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0zZTVkYjM1ODBlMmVkNDkzYmU2MTc5ZDE3YzI3NDEzNWQ1Y2RmODYyZDlkZDFiMjU2M2ZjNjBiNWJiOGY4NGEzJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZyZXNwb25zZS1jb250ZW50LXR5cGU9aW1hZ2UlMkZwbmcifQ.8rQTxAOe1CN1_HNgXoViuqPVI-e63ba52LZaZhLJn9Q)
-![motion_trajectory.png](https://private-user-images.githubusercontent.com/106445856/698612713-6162d125-9ae7-4100-9493-7d895a146109.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3OTQwNzUxNTYsIm5iZiI6MTc5NDA3NDg1NiwicGF0aCI6Ii8xMDY0NDU4NTYvNjk4NjEyNzEzLTYxNjJkMTI1LTlhZTctNDEwMC05NDkzLTdkODk1YTE0NjEwOS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYxMTA3JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MTEwN1QxODA3MzZaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1iMTExMjgwZjA0MWVmZTk2ZDdlMDJiOTM5YjdmMWYzMjBlNmVhMWViNjNhYTU3MjU0NjlmZGNlMWZkYjI0Mjk3JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZyZXNwb25zZS1jb250ZW50LXR5cGU9aW1hZ2UlMkZwbmcifQ.FcYdk6Zhw-hW2j3e7xNTYfgRMQqkIMxVgLk-LkO38og)
+- motion:
+![motion.png](https://github.com/NurlanNecefov/images_for_readme/blob/main/pw2_lab_a_motion.png?raw=true)
+- motion_trajectory:
+![motion_trajectory.png](https://github.com/NurlanNecefov/images_for_readme/blob/main/pw2_lab_a_motion_trajectory.png?raw=true)
 
 **Questions:**
 - ***Part 3: The mean acceleration is near −9.81, but print its
@@ -95,4 +97,55 @@ We used:
     
     Gradient descent and SLSQP methods gives nearly the same results every time. On the other hand, Newton's method finds local minimum or maximum depends on starting point.
 
+**How to Use?:**
+- run this command in `CSPC` folder
+
+      cd "PW2/Lab B" && python warmup_STUDENT.py && python kinetics_STUDENT.py && python titration_STUDENT.py && python equilibrium_STUDENT.py
+- just for image outputs, run `cd "PW2/Lab B" && snakemake --cores 3` in CSPC folder
+
 **Expected Outputs:**
+1. warmup_STUDENT.py:
+
+        For f(x) = (x-3)**2 + 1:
+            x0 = 0
+
+            Gradient descent minimum: x = 2.9999999993888893 ;      y = 1.0
+            Newton's method minimum: x = 3.0 ;      y = 1.0
+            SLSQP minimum: x = 3.0 ;        y = 1.0
+
+        For g(x) = x**4 - 3*x**2 + x + 5
+            x0 = 0:
+
+            Gradient descent minimum: x = -1.3008395659415772 ;     y = 1.48609496106521
+            Newton's method maximum: x = 0.16993844331159128 ;      y = 5.084135220710943
+            SLSQP minimum: x = -1.3008569447162184 ;        y = 1.4860949632256304
+
+
+            x0 = 2:
+
+            Gradient descent minimum: x = -1.3008395659415772 ;     y = 1.48609496106521
+            Newton's method minimum: x = 1.1309011226299859 ;       y = 3.929769818223846
+            SLSQP minimum: x = -1.3006394477423422 ;        y = 1.4860952474858662
+
+2. kinetics_STUDENT.py:
+
+        Fitted k: 0.2617613705507395
+    <img src="https://github.com/NurlanNecefov/images_for_readme/blob/main/pw2_lab_b_kinetics.png?raw=true">
+
+3. titration_STUDENT.py:
+
+        Equivalence point: 50.0 mL
+    <img src="https://github.com/NurlanNecefov/images_for_readme/blob/main/pw2_lab_b_titration.png?raw=true">
+
+4. equilibrium_STUDENT.py:
+
+        Reaction Extent (x):
+        Newton:          0.6638476669609827
+        SLSQP:           0.6638474284044567
+        Difference:      2.38556526088729e-07
+
+        Equilibrium amounts:
+        H2: 0.33615233303901726
+        I2: 0.33615233303901726
+        HI: 1.3276953339219655
+    <img src="https://github.com/NurlanNecefov/images_for_readme/blob/main/pw2_lab_b_equilibrium.png?raw=true">

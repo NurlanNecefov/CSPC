@@ -1,12 +1,12 @@
 rule all:
     input:
-        "kinetics.png"
-        "titration.png"
+        "kinetics.png",
+        "titration.png",
         "equilibrium.png"
 
 rule kinetics:
     input:
-        "kinetics_STUDENT.py"
+        "kinetics_STUDENT.py",
         "kinetics.csv"
     output:
         "kinetics.png"
@@ -15,7 +15,7 @@ rule kinetics:
 
 rule titration:
     input:
-        "titration_STUDENT.py"
+        "titration_STUDENT.py",
         "titration.csv"
     output:
         "titration.png"
