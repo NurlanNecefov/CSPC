@@ -1,0 +1,31 @@
+rule all:
+    input:
+        "kinetics.png"
+        "titration.png"
+        "equilibrium.png"
+
+rule kinetics:
+    input:
+        "kinetics_STUDENT.py"
+        "kinetics.csv"
+    output:
+        "kinetics.png"
+    shell:
+        "python kinetics_STUDENT.py"
+
+rule titration:
+    input:
+        "titration_STUDENT.py"
+        "titration.csv"
+    output:
+        "titration.png"
+    shell:
+        "python titration_STUDENT.py"
+
+rule equilibrium:
+    input:
+        "equilibrium_STUDENT.py"
+    output:
+        "equilibrium.png"
+    shell:
+        "python equilibrium_STUDENT.py"
