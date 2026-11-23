@@ -100,7 +100,7 @@ We used:
 **How to Use?:**
 - run this command in `CSPC` folder
 
-      cd "PW2/Lab B" && python warmup_STUDENT.py && python kinetics_STUDENT.py && python titration_STUDENT.py && python equilibrium_STUDENT.py
+      cd "PW2/Lab B" && python -c "print('\n\nwarmup_STUDENT.py\n')" && python warmup_STUDENT.py && python -c "print('\n\nkinetics_STUDENT.py\n')" && python kinetics_STUDENT.py && python -c "print('\n\ntitration_STUDENT.py\n')" && python titration_STUDENT.py && python -c "print('\n\nequilibrium_STUDENT.py\n')" && python equilibrium_STUDENT.py
 - just for image outputs, run `cd "PW2/Lab B" && snakemake --cores 3` in CSPC folder
 
 **Expected Outputs:**
